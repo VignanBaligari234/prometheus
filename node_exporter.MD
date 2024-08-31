@@ -24,3 +24,16 @@ WantedBy=multi-user.target
 
 ```
 
+```
+[Unit]
+Description=alertmanager service.
+
+[Service]
+WorkingDirectory=/opt/alertmanager
+ExecStart=/opt/alertmanager/alertmanager 
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
